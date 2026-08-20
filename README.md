@@ -13,7 +13,7 @@ Connect this GitHub repository to Cloudflare Pages and use:
 - Root directory: leave blank
 - Node.js: `22` or newer
 
-Set `NEXT_PUBLIC_SITE_URL` to the final production origin, such as `https://yourdomain.com`, before the production build. This gives the sitemap, robots file, canonical links, and social metadata the correct URL.
+The production origin is `https://colorado-roofer.com`. If `NEXT_PUBLIC_SITE_URL` is set in Cloudflare Pages, keep it set to that exact origin so the sitemap, robots file, canonical links, and social metadata all use the primary domain.
 
 ## Local development
 
