@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ClaimDecoder } from "@/components/ClaimDecoder";
 import { InlineLead, LeadCta } from "@/components/LeadCta";
 import { JsonLd } from "@/components/JsonLd";
 import { PageShell } from "@/components/SiteShell";
-import { bookingUrl, phoneDisplay } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Roof Estimate Decoder | Insurance & Contractor Quotes",
-  description: "Upload a Colorado roof insurance estimate to decode RCV, ACV, depreciation, deductible, and claim line items, or review a contractor quote before signing.",
+  title: "Roof Quote Decoder | Free Northern Colorado Quote Review",
+  description: "Upload an existing roofing quote for a clear review of missing scope, potential concerns, and local building-code requirements before you sign.",
 };
+
+const quoteUploadUrl = "https://www.myfamilyroofer.com/quote-uploader";
 
 const sections = [
   { number: "01", title: "Property and measured scope", ask: "Does the quote identify the address, approximate roof size, pitch or complexity, number of layers, and areas included?", watch: "Vague descriptions such as ‘replace roof’ without quantities or defined roof sections." },
@@ -35,6 +35,8 @@ const questions = [
 export default function RoofQuoteDecoderPage() {
   const faq = [
     { question: "Can you compare two roofing quotes?", answer: "Yes. The most useful comparison normalizes materials, quantities, accessories, labor scope, warranties, exclusions, payment terms, and variable costs before comparing totals." },
+    { question: "Can I upload a roofing quote for review?", answer: "Yes. Use the My Family Roofer quote uploader to send your contact information, property address, and quote document for a professional review." },
+    { question: "What will the quote review look for?", answer: "The review focuses on missing scope, unclear materials, variable costs, warranty language, possible concerns, and building-code requirements that may apply to the property." },
     { question: "What should never be missing from a roof quote?", answer: "The contractor and property, defined work, exact materials, price and payment terms, warranty language, exclusions, change-order process, and required signatures should be clear." },
     { question: "Is the cheapest roof estimate a red flag?", answer: "Not by itself. It may reflect efficiency or a smaller scope. The concern is a low price paired with missing materials, vague work, weak protections, or open-ended extras." },
   ];
@@ -44,10 +46,10 @@ export default function RoofQuoteDecoderPage() {
       <section className="page-hero page-hero-blue">
         <div className="container page-hero-grid">
           <div>
-            <p className="eyebrow eyebrow-light">Free homeowner tool and guide</p>
+            <p className="eyebrow eyebrow-light">Free professional quote review</p>
             <h1>Roof Quote Decoder</h1>
-            <p>Upload an insurance adjuster estimate for an instant plain-English explanation, or use the contractor proposal guide to understand scope, materials, warranties, exclusions, and price before signing.</p>
-            <div className="button-row"><a className="button button-white" href="#insurance-estimate-decoder">Upload Insurance Estimate</a><a className="text-link text-link-light" href="#contractor-quote-guide">Review Contractor Quote →</a></div>
+            <p>Already have a roofing quote? Send it to a Northern Colorado roofing professional to identify missing items, potential concerns, and building-code requirements before you sign.</p>
+            <div className="button-row"><a className="button button-white" href="#upload-your-quote">Upload My Roof Quote</a><a className="text-link text-link-light" href="#contractor-quote-guide">Use the Quote Checklist →</a></div>
           </div>
           <div className="decoder-summary">
             <span>QUICK TEST</span>
@@ -58,8 +60,35 @@ export default function RoofQuoteDecoderPage() {
         </div>
       </section>
 
-      <div id="insurance-estimate-decoder" className="section section-muted">
-        <div className="container"><ClaimDecoder /></div>
+      <div id="upload-your-quote" className="section section-muted">
+        <div className="container">
+          <section className="live-decoder" aria-labelledby="quote-upload-title">
+            <div className="live-decoder-intro">
+              <p className="eyebrow">Already have an estimate?</p>
+              <h2 id="quote-upload-title">Upload the Quote. Find Out What It Does—and Does Not—Include.</h2>
+              <p>Brian’s existing quote-review process is the right tool here. Submit the proposal through My Family Roofer and the team will break down what may be missing, what deserves a closer look, and what local building requirements could affect the job.</p>
+              <ul className="decoder-privacy-list">
+                <li>Contractor roofing quotes</li>
+                <li>Insurance roofing estimates</li>
+                <li>Local code considerations</li>
+                <li>Clear professional follow-up</li>
+              </ul>
+            </div>
+
+            <div className="claim-decoder-card quote-uploader-card">
+              <p className="decoder-step">My Family Roofer quote review</p>
+              <h3>Send Your Quote for Review</h3>
+              <p className="decoder-subtext">The existing upload form collects the information the roofing team needs to evaluate the document and follow up with you.</p>
+              <ol className="quote-upload-steps">
+                <li><span>1</span><div><strong>Tell us who you are</strong><p>Add your name, email, and phone number.</p></div></li>
+                <li><span>2</span><div><strong>Identify the property</strong><p>Include the address so local requirements can be considered.</p></div></li>
+                <li><span>3</span><div><strong>Upload the quote</strong><p>Attach the document you want the roofing team to review.</p></div></li>
+              </ol>
+              <a className="button button-primary decoder-action" href={quoteUploadUrl}>Open the Quote Uploader</a>
+              <p className="decoder-private-note">Your document is submitted directly through My Family Roofer’s existing quote-review form.</p>
+            </div>
+          </section>
+        </div>
       </div>
 
       <section id="contractor-quote-guide" className="section container content-with-aside">
