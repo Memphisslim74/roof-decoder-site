@@ -76,6 +76,8 @@ export function SiteFooter() {
           <Link href="/locations/berthoud">Berthoud roof quotes</Link>
           <Link href="/locations/loveland">Loveland roof quotes</Link>
           <Link href="/locations/fort-collins">Fort Collins roof quotes</Link>
+          <Link href="/locations/greeley">Greeley roof quotes</Link>
+          <Link href="/locations/boulder">Boulder roof quotes</Link>
           <Link href="/blog">Roofing articles</Link>
         </div>
         <div className="footer-trust">

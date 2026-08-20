@@ -1,6 +1,6 @@
 # Colorado Roof Quote Decoder
 
-A professional, SEO-focused Northern Colorado roofing resource powered by My Family Roofer. The site focuses on Berthoud, Loveland, and Fort Collins and includes a roof quote decoder, hail resource, local landing pages, and four original roofing guides.
+A professional, SEO-focused Northern Colorado roofing resource powered by My Family Roofer. The site focuses on Berthoud, Loveland, Fort Collins, Greeley, and Boulder and includes a roof quote decoder, hail resource, local landing pages, and original roofing guides.
 
 ## Cloudflare Pages deployment
 

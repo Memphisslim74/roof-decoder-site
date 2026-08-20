@@ -148,6 +148,96 @@ export const cities: CityPage[] = [
       },
     ],
   },
+  {
+    slug: "greeley",
+    city: "Greeley",
+    county: "Weld County",
+    eyebrow: "Greeley roof quote guidance",
+    title: "Compare Your Greeley Roofing Quote With a Clearer Scope",
+    description:
+      "Understand Greeley roofing estimates, hail and wind exposure, impact-resistant shingles, ventilation, warranties, and variable project costs.",
+    intro:
+      "A complete Greeley roofing proposal should explain the system, quantities, labor, property protection, warranty, payment terms, and anything that could change the final price. Roof Quote Decoder helps homeowners find vague language and compare contractors on more than the bottom-line number.",
+    localNote:
+      "Greeley roofs face Front Range hail, wind, temperature swings, snow, and strong sun. The right proposal should reflect the home's age, roof geometry, ventilation, drainage, and actual inspection findings instead of relying on a generic replacement package.",
+    concerns: [
+      {
+        title: "Hail and wind documentation",
+        text: "Ask for photographs and clear observations covering every roof slope, ridge, vents, flashing, gutters, downspouts, siding, and other collateral surfaces.",
+      },
+      {
+        title: "Ventilation and drainage",
+        text: "Confirm intake, exhaust, valleys, penetrations, edge protection, gutters, and water-shedding details as part of the full roofing system.",
+      },
+      {
+        title: "Defined variable costs",
+        text: "Decking, additional tear-off layers, specialty flashing, access conditions, and code-related work should have clear unit prices and an approval process.",
+      },
+    ],
+    neighborhoods: ["Downtown Greeley", "West Greeley", "Kelly Farm", "St. Michaels", "Promontory", "Poudre River Ranch"],
+    faq: [
+      {
+        question: "What should a Greeley roofing estimate include?",
+        answer:
+          "Look for the exact material system, quantities, removal and disposal, decking terms, flashing, ventilation, permits, cleanup, warranty coverage, exclusions, and change-order process.",
+      },
+      {
+        question: "Are impact-resistant shingles worth comparing in Greeley?",
+        answer:
+          "They are worth discussing because hail is a recurring regional exposure. Compare the exact product, complete system, warranty, upgrade cost, and any policy implications with your roofer and insurer.",
+      },
+      {
+        question: "When should a Greeley homeowner request a hail inspection?",
+        answer:
+          "Consider an inspection after a significant storm, especially when you see dents on gutters or vents, damaged screens or siding, roofing debris, or neighborhood reports of damage. Avoid walking the roof yourself.",
+      },
+    ],
+  },
+  {
+    slug: "boulder",
+    city: "Boulder",
+    county: "Boulder County",
+    eyebrow: "Boulder roofing estimate guidance",
+    title: "Decode Your Boulder Roofing Estimate Before Work Begins",
+    description:
+      "Compare Boulder roofing quotes with clear guidance on materials, ventilation, flashing, weather exposure, warranties, permits, and hidden-cost language.",
+    intro:
+      "Boulder roofing projects can involve very different home ages, roof shapes, access conditions, material choices, and jurisdictional requirements. A useful proposal should define those conditions in writing so the homeowner can compare complete systems instead of broad promises.",
+    localNote:
+      "Boulder roofs must manage hail, wind, snow, freeze-thaw cycles, intense sun, and property-specific design conditions. Older homes and complex roof-to-wall transitions deserve especially clear flashing, ventilation, decking, and change-order language.",
+    concerns: [
+      {
+        title: "Property-specific scope",
+        text: "The proposal should reflect roof geometry, access, existing layers, penetrations, wall intersections, drainage, and actual material quantities for the home.",
+      },
+      {
+        title: "Flashing and ventilation",
+        text: "Ask whether flashing will be replaced or reused and how intake and exhaust ventilation were calculated for the proposed roof system.",
+      },
+      {
+        title: "Permits and project variables",
+        text: "Confirm who handles permits and inspections, which requirements are included, and how unforeseen decking or code-related work will be documented and approved.",
+      },
+    ],
+    neighborhoods: ["North Boulder", "South Boulder", "Table Mesa", "Gunbarrel", "Martin Acres", "Mapleton Hill"],
+    faq: [
+      {
+        question: "What makes a Boulder roofing quote easy to compare?",
+        answer:
+          "A comparable quote identifies the complete system, quantities, labor, permits, flashing, ventilation, property protection, warranty, exclusions, payment terms, and variable-cost process.",
+      },
+      {
+        question: "Should flashing be addressed in a Boulder roof replacement?",
+        answer:
+          "Yes. The quote should state which flashing will be replaced, reused, or evaluated after tear-off, especially at walls, chimneys, skylights, valleys, and penetrations.",
+      },
+      {
+        question: "Can a roofer explain differences between a contractor scope and insurance estimate?",
+        answer:
+          "A roofer can explain construction scope and document observed conditions. Your insurer decides coverage, and policy questions should be confirmed with the insurer or a licensed insurance professional.",
+      },
+    ],
+  },
 ];
 
 export type BlogSection = {
@@ -176,7 +266,7 @@ export const posts: BlogPost[] = [
     slug: "how-to-compare-roofing-quotes-northern-colorado",
     title: "How to Compare Roofing Quotes in Northern Colorado",
     description:
-      "A practical, line-by-line guide to comparing roof replacement estimates in Berthoud, Loveland, and Fort Collins without choosing on price alone.",
+      "A practical, line-by-line guide to comparing roof replacement estimates in Berthoud, Loveland, Fort Collins, Greeley, and Boulder without choosing on price alone.",
     category: "Roof Quotes",
     readTime: "8 min read",
     published: "2026-08-20",
@@ -302,7 +392,7 @@ export const posts: BlogPost[] = [
       {
         heading: "When the upgrade makes sense",
         paragraphs: [
-          "For many Berthoud, Loveland, and Fort Collins homeowners, impact resistance is a rational upgrade because hail is a recurring exposure. The decision is strongest when the product, complete system, installer, warranty, price difference, and insurance implications all make sense together.",
+          "For many Berthoud, Loveland, Fort Collins, Greeley, and Boulder homeowners, impact resistance is a rational upgrade because hail is a recurring exposure. The decision is strongest when the product, complete system, installer, warranty, price difference, and insurance implications all make sense together.",
         ],
       },
     ],
@@ -323,7 +413,7 @@ export const posts: BlogPost[] = [
     slug: "what-to-do-after-hail-damage-northern-colorado",
     title: "What to Do After a Northern Colorado Hailstorm",
     description:
-      "A calm step-by-step hail damage checklist for homeowners in Berthoud, Loveland, and Fort Collins, from safety and documentation to inspection and insurance.",
+      "A calm step-by-step hail damage checklist for homeowners in Berthoud, Loveland, Fort Collins, Greeley, and Boulder, from safety and documentation to inspection and insurance.",
     category: "Hail Damage",
     readTime: "8 min read",
     published: "2026-08-20",

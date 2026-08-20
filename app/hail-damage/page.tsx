@@ -6,7 +6,7 @@ import { PageShell } from "@/components/SiteShell";
 import { bookingUrl } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Northern Colorado Hail Damage Roof Guide | Berthoud, Loveland & Fort Collins",
+  title: "Northern Colorado Hail Damage Roof Guide | Five Local Areas",
   description: "What to check after hail, when to schedule a roof inspection, how to document damage, and which roofing and insurance red flags to avoid in Northern Colorado.",
 };
 
@@ -30,7 +30,7 @@ export default function HailDamagePage() {
       <section className="image-page-hero">
         <img src="/blog/hail-damage-guide.webp" alt="Hail on an architectural shingle roof after a Northern Colorado storm" />
         <div className="image-page-overlay" />
-        <div className="container image-page-content"><p className="eyebrow eyebrow-light">Northern Colorado hail resource</p><h1>Hail Hit. Don’t Let Urgency Make the Decision.</h1><p>A practical response plan for Berthoud, Loveland, and Fort Collins homeowners.</p><a className="button button-primary" href={bookingUrl}>Request a Free Hail Inspection</a></div>
+        <div className="container image-page-content"><p className="eyebrow eyebrow-light">Northern Colorado hail resource</p><h1>Hail Hit. Don’t Let Urgency Make the Decision.</h1><p>A practical response plan for Berthoud, Loveland, Fort Collins, Greeley, and Boulder homeowners.</p><a className="button button-primary" href={bookingUrl}>Request a Free Hail Inspection</a></div>
       </section>
 
       <section className="section container content-with-aside">

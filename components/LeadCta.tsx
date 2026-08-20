@@ -52,6 +52,8 @@ export function CityLinks() {
       <Link href="/locations/berthoud">Berthoud</Link>
       <Link href="/locations/loveland">Loveland</Link>
       <Link href="/locations/fort-collins">Fort Collins</Link>
+      <Link href="/locations/greeley">Greeley</Link>
+      <Link href="/locations/boulder">Boulder</Link>
     </div>
   );
 }

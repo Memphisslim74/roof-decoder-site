@@ -16,7 +16,7 @@ const faq = [
   { q: "What is a roof quote decoder?", a: "It is a homeowner-first way to translate a roofing estimate into plain English. It helps you understand materials, labor, exclusions, warranties, payment terms, and questions to ask before signing." },
   { q: "Is a roof quote review the same as an inspection?", a: "No. A quote review evaluates the written proposal. A roof inspection evaluates the actual condition of the roof and exterior. For the clearest answer, you may need both." },
   { q: "Do you only help with My Family Roofer estimates?", a: "No. The educational guides are designed to help Northern Colorado homeowners understand and compare roofing scopes, regardless of which contractor prepared them." },
-  { q: "What areas do you serve?", a: "This resource is focused on Berthoud, Loveland, and Fort Collins, Colorado, with local roofing help available throughout nearby Northern Colorado communities." },
+  { q: "What areas do you serve?", a: "This resource is focused on Berthoud, Loveland, Fort Collins, Greeley, and Boulder, Colorado, with local roofing help available throughout nearby Northern Colorado communities." },
 ];
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="container hero-content">
           <p className="eyebrow eyebrow-light">Northern Colorado Roof Quote Decoder</p>
           <h1>Understand Your Roof Quote <span>Before You Sign.</span></h1>
-          <p className="hero-lede">Compare the scope, materials, warranties, and hidden variables in your roofing estimate—with clear local guidance for Berthoud, Loveland, and Fort Collins homeowners.</p>
+          <p className="hero-lede">Compare the scope, materials, warranties, and hidden variables in your roofing estimate—with clear local guidance for Berthoud, Loveland, Fort Collins, Greeley, and Boulder homeowners.</p>
           <div className="button-row">
             <Link className="button button-primary" href="/roof-quote-decoder">Decode My Roof Quote</Link>
             <a className="button button-outline-light" href={bookingUrl}>Request a Free Roof Review</a>
@@ -95,7 +95,7 @@ export default function Home() {
         <div className="container">
           <div className="section-heading-row">
             <div><p className="eyebrow">Focused local coverage</p><h2 className="section-title">Built for Northern Colorado Roofs</h2></div>
-            <p className="heading-support">Three primary service areas. Distinct local guidance. One trusted roofing team.</p>
+            <p className="heading-support">Five primary service areas. Distinct local guidance. One trusted roofing team.</p>
           </div>
           <div className="location-grid">
             {cities.map((city, index) => (
