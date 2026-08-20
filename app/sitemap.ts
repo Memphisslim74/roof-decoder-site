@@ -4,7 +4,7 @@ import { cities, posts } from "@/lib/content";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://colorado-roof-decoder.pages.dev";
+  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://colorado-roofer.com";
   const updated = new Date("2026-08-20");
   return [
     { url: base, lastModified: updated, changeFrequency: "weekly", priority: 1 },
