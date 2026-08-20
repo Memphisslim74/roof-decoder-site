@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ClaimDecoder } from "@/components/ClaimDecoder";
 import { InlineLead, LeadCta } from "@/components/LeadCta";
 import { JsonLd } from "@/components/JsonLd";
 import { PageShell } from "@/components/SiteShell";
 import { bookingUrl, phoneDisplay } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Roof Quote Decoder | Compare Roofing Estimates in Northern Colorado",
-  description: "Decode a roofing quote line by line. Understand materials, scope, warranties, exclusions, payment terms, and red flags before signing in Northern Colorado.",
+  title: "Roof Estimate Decoder | Insurance & Contractor Quotes",
+  description: "Upload a Colorado roof insurance estimate to decode RCV, ACV, depreciation, deductible, and claim line items, or review a contractor quote before signing.",
 };
 
 const sections = [
@@ -43,10 +44,10 @@ export default function RoofQuoteDecoderPage() {
       <section className="page-hero page-hero-blue">
         <div className="container page-hero-grid">
           <div>
-            <p className="eyebrow eyebrow-light">Free homeowner guide</p>
+            <p className="eyebrow eyebrow-light">Free homeowner tool and guide</p>
             <h1>Roof Quote Decoder</h1>
-            <p>Use this line-by-line framework to understand what your Northern Colorado roofing proposal includes, what it leaves unclear, and what to ask before signing.</p>
-            <div className="button-row"><a className="button button-white" href={bookingUrl}>Have a Local Roofer Review It</a><a className="text-link text-link-light" href={`tel:+1${phoneDisplay.replaceAll("-", "")}`}>Call {phoneDisplay} →</a></div>
+            <p>Upload an insurance adjuster estimate for an instant plain-English explanation, or use the contractor proposal guide to understand scope, materials, warranties, exclusions, and price before signing.</p>
+            <div className="button-row"><a className="button button-white" href="#insurance-estimate-decoder">Upload Insurance Estimate</a><a className="text-link text-link-light" href="#contractor-quote-guide">Review Contractor Quote →</a></div>
           </div>
           <div className="decoder-summary">
             <span>QUICK TEST</span>
@@ -57,7 +58,11 @@ export default function RoofQuoteDecoderPage() {
         </div>
       </section>
 
-      <section className="section container content-with-aside">
+      <div id="insurance-estimate-decoder" className="section section-muted">
+        <div className="container"><ClaimDecoder /></div>
+      </div>
+
+      <section id="contractor-quote-guide" className="section container content-with-aside">
         <div>
           <p className="eyebrow">Read the scope—not just the total</p>
           <h2 className="section-title">Seven Parts of a Complete Roof Proposal</h2>
