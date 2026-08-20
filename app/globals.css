@@ -239,6 +239,12 @@ button, input, textarea, select { font: inherit; }
 .decoder-privacy-list li::before { content: "\2713"; position: absolute; left: 0; color: var(--blue); font-weight: 900; }
 .claim-decoder-card { min-height: 520px; padding: 38px; border: 1px solid var(--line); border-top: 5px solid var(--blue); border-radius: var(--radius); background: #fff; box-shadow: 0 18px 48px rgba(7,26,51,.09); }
 .claim-decoder-card h3 { margin: 5px 0 7px; color: var(--navy); font-size: 1.55rem; line-height: 1.2; }
+.quote-uploader-card { min-height: 0; }
+.quote-upload-steps { display: grid; gap: 0; margin: 25px 0 28px; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.quote-upload-steps li { display: grid; grid-template-columns: 34px 1fr; gap: 14px; padding: 17px 0; border-bottom: 1px solid var(--line); }
+.quote-upload-steps li > span { display: flex; width: 28px; height: 28px; align-items: center; justify-content: center; border-radius: var(--radius); background: var(--soft); color: var(--blue); font-size: .75rem; font-weight: 900; }
+.quote-upload-steps strong { display: block; color: var(--navy); font-size: .9rem; }
+.quote-upload-steps p { margin: 3px 0 0; color: var(--slate); font-size: .8rem; }
 .decoder-step { margin: 0; color: var(--blue); font-size: .7rem; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
 .decoder-subtext { margin: 0 0 24px; color: var(--slate); font-size: .82rem; }
 .decoder-dropzone { min-height: 190px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; padding: 30px; border: 2px dashed #9aabc0; border-radius: var(--radius); background: #fbfcfe; color: var(--navy); text-align: center; cursor: pointer; transition: border-color .18s ease, background .18s ease; }
