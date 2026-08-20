@@ -66,7 +66,7 @@ export default function RoofQuoteDecoderPage() {
             <div className="live-decoder-intro">
               <p className="eyebrow">Already have an estimate?</p>
               <h2 id="quote-upload-title">Upload the Quote. Find Out What It Does—and Does Not—Include.</h2>
-              <p>Brian’s existing quote-review process is the right tool here. Submit the proposal through My Family Roofer and the team will break down what may be missing, what deserves a closer look, and what local building requirements could affect the job.</p>
+              <p>My Family Roofer’s quote-review process is designed for this exact situation. Submit the proposal and the roofing team will identify possible scope gaps, items that deserve a closer look, and local building requirements that may affect the project.</p>
               <ul className="decoder-privacy-list">
                 <li>Contractor roofing quotes</li>
                 <li>Insurance roofing estimates</li>
