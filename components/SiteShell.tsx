@@ -5,7 +5,7 @@ const navItems = [
   { href: "/roof-quote-decoder", label: "Quote Decoder" },
   { href: "/hail-damage", label: "Hail Help" },
   { href: "/locations", label: "Service Areas" },
-  { href: "/blog", label: "Roofing Guides" },
+  { href: "/blog", label: "Articles" },
 ];
 
 export function SiteHeader() {

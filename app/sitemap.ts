@@ -5,7 +5,7 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL || "https://colorado-roofer.com";
-  const updated = new Date("2026-08-20");
+  const updated = new Date("2026-08-27");
   return [
     { url: base, lastModified: updated, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/roof-quote-decoder`, lastModified: updated, changeFrequency: "monthly", priority: 0.95 },

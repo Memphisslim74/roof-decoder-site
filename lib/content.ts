@@ -244,6 +244,7 @@ export type BlogSection = {
   heading: string;
   paragraphs?: string[];
   bullets?: string[];
+  links?: { label: string; href: string }[];
 };
 
 export type BlogPost = {
@@ -262,6 +263,137 @@ export type BlogPost = {
 };
 
 export const posts: BlogPost[] = [
+  {
+    slug: "roof-replacement-cost-northern-colorado-2026",
+    title: "2026 Roof Replacement Costs in Northern Colorado: A Homeowner's Guide",
+    description:
+      "Plan a 2026 Northern Colorado roof replacement with realistic cost ranges, price factors, local permit considerations, and quote-comparison tips.",
+    category: "Roof Costs",
+    readTime: "9 min read",
+    published: "2026-08-27",
+    updated: "2026-08-27",
+    image: "/blog/roofing-quote-guide.webp",
+    imageAlt: "Homeowner reviewing a roofing estimate, calculator, and shingle samples",
+    intro:
+      "For many Northern Colorado homes, a complete asphalt-shingle roof replacement in 2026 is reasonable to budget at roughly $12,000 to $25,000. A smaller, simple roof may cost less, while a large, steep, cut-up, or premium roof can move well beyond that range. The important word is budget: no regional average can replace a roof measurement and a written, property-specific scope.",
+    sections: [
+      {
+        heading: "The short answer: a practical 2026 planning range",
+        paragraphs: [
+          "A useful starting range for architectural asphalt shingles in Northern Colorado is about $600 to $900 per roofing square installed. One roofing square equals 100 square feet of actual roof surface. That rough range may include tear-off, disposal, a coordinated shingle system, standard flashing and ventilation work, labor, overhead, and permits, but only a written proposal tells you what is truly included.",
+          "Public cost sources vary because they use different project sizes and data sets. HomeGuide's 2026 national guide reports $300 to $600 per square for a new roof, while Angi's current Denver data places many complete projects between about $7,400 and $16,500. Colorado projects with impact-resistant materials, steeper roofs, multiple stories, extensive flashing, or decking repairs can price higher. The broader local planning range above is an estimate, not a guaranteed market rate or offer.",
+        ],
+        bullets: [
+          "15-square roof: roughly $9,000 to $13,500",
+          "20-square roof: roughly $12,000 to $18,000",
+          "25-square roof: roughly $15,000 to $22,500",
+          "30-square roof: roughly $18,000 to $27,000",
+        ],
+        links: [
+          { label: "Review HomeGuide's 2026 national cost data", href: "https://homeguide.com/costs/roof-replacement-cost" },
+          { label: "Review Angi's current Denver roof-cost data", href: "https://www.angi.com/articles/how-much-does-roof-replacement-cost/co/denver" },
+        ],
+      },
+      {
+        heading: "Why your home's square footage is not the roof size",
+        paragraphs: [
+          "A 2,000-square-foot house does not necessarily have a 2,000-square-foot roof. Roof pitch, overhangs, attached garages, porches, additions, dormers, and waste around hips and valleys all increase the measured roofing area. A ranch home may have more roof surface than a two-story house with the same finished living area.",
+          "Ask each contractor to show the measured number of squares and explain the waste factor. If one proposal measures 22 squares and another measures 29, the price difference may begin with measurement rather than materials or profit.",
+        ],
+      },
+      {
+        heading: "What changes the final roof replacement price",
+        paragraphs: [
+          "Roof size is only the first variable. Labor and safety requirements rise on steep roofs, high eaves, limited-access properties, and homes with many valleys, walls, skylights, chimneys, or penetrations. Removing two layers costs more than removing one. Disposal, material staging, landscaping protection, and difficult driveway access can also affect the work plan.",
+          "Decking is another major unknown because some deterioration cannot be confirmed until the old roof is removed. Your quote should state how many sheets, if any, are included and give a unit price for additional decking. The same clarity should apply to step flashing, chimney flashing, pipe boots, skylights, gutters, fascia, and ventilation changes.",
+          "Material choice matters, but compare the whole system. Standard architectural shingles, Class 4 impact-resistant shingles, premium designer shingles, standing-seam metal, and specialty products carry different material and installation costs. Starter, ridge cap, underlayment, ice barrier, ventilation, fasteners, and warranty eligibility should be named—not hidden behind a single shingle brand.",
+        ],
+        links: [
+          { label: "Learn what Class 4 shingles actually mean", href: "/blog/what-class-4-shingles-mean-colorado" },
+          { label: "Compare roofing quotes line by line", href: "/blog/how-to-compare-roofing-quotes-northern-colorado" },
+        ],
+      },
+      {
+        heading: "Local permits and code details belong in the price",
+        paragraphs: [
+          "Northern Colorado is not one building jurisdiction. Requirements can differ between a city, an unincorporated county address, and even nearby homes with different governing authorities. Fort Collins states that roof repairs or replacements larger than one roofing square require a permit and that asphalt re-roofs require Class IV impact-resistant shingles. Its 2024 International Codes and local amendments apply to permits submitted on or after April 1, 2026.",
+          "Loveland's 2024 code changes took effect July 1, 2026. Boulder requires permits and inspections for regulated work, and its roof-inspection guide calls for photo documentation and verification of ventilation on applicable permitted projects. Berthoud properties may fall within different county or municipal boundaries, and Greeley maintains its own permitting process. A contractor should identify the actual authority for your address instead of assuming every Front Range project follows the same checklist.",
+          "The bigger question is whether the proposal includes the materials and labor needed to meet the requirements that apply to the home. Before signing, ask who obtains the permit, who schedules inspections, what code-related work is included, and how a newly discovered requirement will be approved and priced.",
+        ],
+        links: [
+          { label: "Fort Collins building permits and roofing application", href: "https://www.fcgov.com/building/permit-exempt" },
+          { label: "Loveland's current building code information", href: "https://www.lovgov.org/services/development-services/building-division/loveland-building-code" },
+          { label: "Boulder's official roof inspection guide", href: "https://bouldercolorado.gov/roof-inspection-guide" },
+          { label: "Berthoud roof quote guidance", href: "/locations/berthoud" },
+          { label: "Loveland roof quote guidance", href: "/locations/loveland" },
+          { label: "Fort Collins roof quote guidance", href: "/locations/fort-collins" },
+          { label: "Greeley roof quote guidance", href: "/locations/greeley" },
+          { label: "Boulder roof quote guidance", href: "/locations/boulder" },
+        ],
+      },
+      {
+        heading: "The quote should separate known costs from possible costs",
+        paragraphs: [
+          "A homeowner should be able to identify the base contract price, selected material system, measured quantity, taxes, permits, warranties, payment schedule, and exclusions. Variables should have written unit prices or a clear change-order method. Phrases such as “decking as needed” or “code upgrades extra” are not enough when no rate or approval process is provided.",
+        ],
+        bullets: [
+          "Number of tear-off layers and disposal included",
+          "Decking allowance and price per additional sheet",
+          "Exact shingle, starter, ridge, and underlayment products",
+          "Flashing, ventilation, ice barrier, and edge-metal scope",
+          "Permit, inspection, tax, delivery, and cleanup responsibility",
+          "Workmanship warranty and manufacturer-warranty level",
+          "Payment milestones, financing cost, exclusions, and change orders",
+        ],
+      },
+      {
+        heading: "Insurance scope and roof price are not the same thing",
+        paragraphs: [
+          "If hail or wind is involved, the insurer's estimate and the contractor's proposal may organize quantities and line items differently. The carrier decides coverage under the policy; the contractor defines the construction scope and price. Neither document should be treated as automatic proof that the other is complete.",
+          "Compare the deductible, depreciation, covered scope, contractor scope, and any proposed supplements separately. A supplement asks the insurer to review additional documentation and is not a promise of payment. Confirm coverage questions and deadlines with the insurer or licensed agent, and do not assume an advertised material upgrade will produce a premium discount unless the carrier confirms it for the exact product and policy.",
+        ],
+        links: [
+          { label: "Read the Colorado roof insurance guide", href: "/blog/does-insurance-pay-for-roof-replacement-colorado" },
+          { label: "Use the Northern Colorado hail-damage guide", href: "/hail-damage" },
+        ],
+      },
+      {
+        heading: "How to control cost without buying the cheapest roof",
+        paragraphs: [
+          "Get two or three detailed proposals built around the same material level and written scope. Resolve measurement differences, ask for unit prices, and remove optional upgrades you do not value. If financing is involved, compare the total financed cost—not only the monthly payment. Ask whether the cash price changes when dealer fees are built into a financing plan.",
+          "The lowest bid is not automatically wrong, and the highest bid is not automatically better. Value comes from a complete system, trained installation, reliable supervision, property protection, enforceable warranty terms, and a contractor that will still respond after the final payment.",
+        ],
+      },
+      {
+        heading: "Your next step: turn the estimate into a clear scope",
+        paragraphs: [
+          "Before choosing a roofer, mark every major item as included, excluded, allowance, or unclear. Then ask the contractor to revise vague answers into the proposal. A professional quote review can help identify missing scope, open-ended charges, and questions worth resolving before you sign.",
+          "For a Berthoud, Loveland, Fort Collins, Greeley, or Boulder property, start with the actual roof—not a regional average. Upload the proposal for review or schedule a local inspection so the recommendation reflects the home's measurements, condition, jurisdiction, and material goals.",
+        ],
+        links: [
+          { label: "Upload your proposal through the Roof Quote Decoder", href: "/roof-quote-decoder" },
+          { label: "What to do after a Northern Colorado hailstorm", href: "/blog/what-to-do-after-hail-damage-northern-colorado" },
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "How much does a 2,000-square-foot roof cost in Northern Colorado in 2026?",
+        answer:
+          "If 2,000 square feet is the measured roof surface, a rough asphalt-shingle planning range is about $12,000 to $18,000. If 2,000 square feet describes the home's living area, the roof may be larger. Pitch, waste, layers, access, decking, flashing, ventilation, material, and jurisdiction can move the price outside that range.",
+      },
+      {
+        question: "Do Class 4 shingles make a Northern Colorado roof more expensive?",
+        answer:
+          "Often, yes. The upgrade depends on the exact product and complete system. Class 4 describes performance in a defined impact test; it does not make a roof hail-proof or guarantee an insurance discount. Compare the added cost, warranty, and policy effect before deciding.",
+      },
+      {
+        question: "Why can two roof replacement quotes be thousands of dollars apart?",
+        answer:
+          "The contractors may be pricing different measurements, materials, tear-off layers, decking assumptions, flashing, ventilation, permits, labor standards, warranties, overhead, financing, or exclusions. Normalize the scope before comparing the totals.",
+      },
+    ],
+  },
   {
     slug: "how-to-compare-roofing-quotes-northern-colorado",
     title: "How to Compare Roofing Quotes in Northern Colorado",
