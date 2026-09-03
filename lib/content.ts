@@ -245,6 +245,12 @@ export type BlogSection = {
   paragraphs?: string[];
   bullets?: string[];
   links?: { label: string; href: string }[];
+  subsections?: {
+    heading: string;
+    paragraphs?: string[];
+    bullets?: string[];
+    links?: { label: string; href: string }[];
+  }[];
 };
 
 export type BlogPost = {
@@ -263,6 +269,181 @@ export type BlogPost = {
 };
 
 export const posts: BlogPost[] = [
+  {
+    slug: "roof-repair-vs-replacement-colorado",
+    title: "Roof Repair or Replacement? A Northern Colorado Homeowner Decision Guide",
+    description:
+      "Decide whether to repair or replace a Colorado roof using damage extent, roof age, leaks, matching materials, code, cost, and insurance scope.",
+    category: "Roof Planning",
+    readTime: "9 min read",
+    published: "2026-09-03",
+    updated: "2026-09-03",
+    image: "/roof-decoder-hero.webp",
+    imageAlt: "Architectural asphalt shingle roof on a Northern Colorado home",
+    intro:
+      "A roof leak does not automatically mean you need a new roof, and a few intact shingles do not automatically mean a repair is the smart choice. The right answer depends on where the problem started, how much of the roof is affected, whether the surrounding materials can accept a durable repair, and the long-term cost—not a salesperson's preferred solution.",
+    sections: [
+      {
+        heading: "Start with the condition of the whole roof",
+        paragraphs: [
+          "Repair versus replacement is not simply a comparison between a small invoice and a large one. A repair is valuable when it corrects a defined problem and leaves a serviceable roof around it. Replacement becomes more reasonable when the visible problem is one symptom of widespread aging, storm damage, installation defects, or moisture below the shingles.",
+          "The Asphalt Roofing Manufacturers Association emphasizes that asphalt-shingle roofs are repairable. Its 2026 guidance identifies individual damaged shingles, wind-lifted tabs, backed-out fasteners, and flashing around penetrations as examples that may be repaired by a qualified professional. The question is not whether a repair is technically possible. It is whether that repair is appropriate for this roof and likely to hold up.",
+        ],
+        links: [
+          { label: "Read ARMA's 2026 guidance on repairable asphalt roofs", href: "https://www.asphaltroofing.org/asphalt-shingle-roofs-are-repairable-what-you-need-to-know/" },
+        ],
+        subsections: [
+          {
+            heading: "A repair is usually worth considering when",
+            bullets: [
+              "Damage is limited to a small, identifiable area.",
+              "The leak comes from one flashing detail, pipe boot, vent, or isolated puncture.",
+              "Surrounding shingles remain flexible, well-adhered, and in serviceable condition.",
+              "Matching or compatible materials are available.",
+              "The roof deck is dry and sound outside the affected area.",
+              "There is no pattern of repeat repairs or leaks across multiple slopes.",
+            ],
+          },
+          {
+            heading: "Replacement deserves a closer look when",
+            bullets: [
+              "Damage, curling, cracking, or granule loss is widespread rather than isolated.",
+              "Leaks appear in multiple areas or return after previous repairs.",
+              "Shingles are too brittle to lift and reseal without causing more damage.",
+              "Decking deterioration, trapped moisture, or ventilation problems affect a larger assembly.",
+              "Prior layers, patches, or incompatible materials make another repair unreliable.",
+              "The repair would consume a meaningful share of replacement cost without providing a dependable service period.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Roof age is evidence—not a verdict",
+        paragraphs: [
+          "Roof age helps frame the decision, but real roofs do not age on a universal clock. Product quality, installation, ventilation, pitch, sun, maintenance, wind, hail, snow, and previous repairs all affect condition. A newer roof can fail early; an older roof can remain serviceable.",
+          "A durable repair may preserve years of service on a healthy roof. On an older roof with brittle materials and several warning signs, repeated patches can postpone an unavoidable replacement while hidden damage grows. Ask the inspector to explain observed condition instead of relying on age alone.",
+        ],
+      },
+      {
+        heading: "Inspect the assembly, not just the visible shingle",
+        paragraphs: [
+          "A ceiling stain may be several feet from the entry point because water can travel along decking, rafters, fasteners, or underlayment. A repair recommendation should connect the symptom to a documented cause.",
+          "The National Roofing Contractors Association advises homeowners to assess storm damage from the ground and leave close inspection and repair to trained professionals. Walking a steep, wet, or damaged roof creates a serious fall risk.",
+        ],
+        links: [
+          { label: "Review NRCA's homeowner roofing safety guidance", href: "https://www.nrca.net/news-events/press-room/storm-roof-repairs" },
+        ],
+        subsections: [
+          {
+            heading: "Exterior inspection points",
+            bullets: [
+              "Every roof slope, ridge, hip, valley, eave, and transition",
+              "Shingle adhesion, cracking, missing tabs, granule condition, and exposed fasteners",
+              "Wall, chimney, skylight, valley, and step flashing",
+              "Pipe boots, vents, gutters, edge metal, and storm-related collateral damage",
+              "Soft or uneven decking and evidence of previous repairs",
+            ],
+          },
+          {
+            heading: "Interior and attic inspection points",
+            bullets: [
+              "Water stains, wet insulation, active drips, and moisture patterns",
+              "Decking discoloration, rot, fastener staining, and daylight through openings",
+              "Blocked intake vents, unbalanced exhaust, condensation, and bathroom vents terminating in the attic",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Test whether the proposed repair is truly repairable",
+        paragraphs: [
+          "Ask the contractor to identify the repair area, failed component, materials being removed, and how new work will tie into the existing system. Can shingles be lifted without tearing? Is a compatible replacement available? Will flashing be rebuilt or covered with sealant? What workmanship coverage applies?",
+          "Color mismatch is mostly cosmetic, but compatibility and sealability affect performance. Discontinued products do not automatically require replacement. The inspector should explain any practical limitation and why it changes the scope.",
+        ],
+      },
+      {
+        heading: "Local code can change the scope",
+        paragraphs: [
+          "A small repair and a reroof may trigger different permit, inspection, and material requirements. Fort Collins currently states that Class 4 impact-resistant shingles are required when replacing 50% or more of a roof on the portion being replaced. Loveland's 2024 code amendments took effect July 1, 2026. Boulder uses a detailed roof-inspection process that includes photo documentation and ventilation verification for applicable permitted projects.",
+          "Berthoud properties may fall under different municipal or county authorities, while Greeley has its own process. The contractor should verify the authority for the exact address. A Loveland project may require a different approach than work in Fort Collins, Greeley, Boulder, or a Berthoud-area county jurisdiction.",
+        ],
+        links: [
+          { label: "Fort Collins roofing permit requirements", href: "https://www.fortcollins.gov/Business/Permits-and-Licensing/Building-Permits" },
+          { label: "Loveland's current building code information", href: "https://www.lovgov.org/services/development-services/building-division/loveland-building-code" },
+          { label: "Boulder's official roof inspection guide", href: "https://bouldercolorado.gov/roof-inspection-guide" },
+          { label: "Berthoud roofing guidance", href: "/locations/berthoud" },
+          { label: "Loveland roofing guidance", href: "/locations/loveland" },
+          { label: "Fort Collins roofing guidance", href: "/locations/fort-collins" },
+          { label: "Greeley roofing guidance", href: "/locations/greeley" },
+          { label: "Boulder roofing guidance", href: "/locations/boulder" },
+        ],
+      },
+      {
+        heading: "Compare the long-term math",
+        paragraphs: [
+          "A repair quote should explain what it fixes, what it does not fix, and the expected result. A replacement quote should define tear-off, decking terms, underlayment, ice barrier, flashing, ventilation, edge metal, permits, cleanup, and warranties.",
+          "Compare repair cost with the roof's documented condition. One targeted repair on a healthy roof can be responsible. Repairs across several slopes, repeated interior damage, and an approaching replacement can make the cheaper option more expensive. These are planning judgments, not guaranteed service-life predictions.",
+        ],
+        links: [
+          { label: "See 2026 Northern Colorado roof replacement cost factors", href: "/blog/roof-replacement-cost-northern-colorado-2026" },
+          { label: "Learn how to compare roofing proposals", href: "/blog/how-to-compare-roofing-quotes-northern-colorado" },
+        ],
+      },
+      {
+        heading: "Keep the insurance decision separate",
+        paragraphs: [
+          "A contractor can document storm damage and price the work; the insurer decides coverage under the policy. A replacement recommendation does not guarantee coverage, and repairability does not determine how deductibles, depreciation, exclusions, or matching provisions apply.",
+          "Compare the construction recommendation with the insurer's written scope. Ask about quantity and line-item differences. Confirm policy language and deadlines with the insurer or licensed agent, and treat a supplement as a request for review—not promised payment.",
+        ],
+        links: [
+          { label: "Read the Colorado roof insurance guide", href: "/blog/does-insurance-pay-for-roof-replacement-colorado" },
+          { label: "Use the Northern Colorado hail-damage guide", href: "/hail-damage" },
+        ],
+      },
+      {
+        heading: "Questions to ask before deciding",
+        bullets: [
+          "What caused the problem, and what evidence supports that conclusion?",
+          "Is the damage isolated or present across multiple slopes and components?",
+          "Can the existing shingles be lifted and resealed without creating new damage?",
+          "Are compatible materials available, and does any mismatch affect performance or only appearance?",
+          "What decking, flashing, or ventilation problems were found?",
+          "What permit and material requirements apply to this address and scope?",
+          "What is excluded, what could change the price, and how are changes approved?",
+          "What workmanship coverage applies to the repair or replacement?",
+          "If repair is recommended, what signs would mean replacement should be reconsidered?",
+        ],
+      },
+      {
+        heading: "Your next step: get the recommendation in writing",
+        paragraphs: [
+          "Do not settle for “you need a roof” or “we can patch it.” Ask for photographs, the cause, the remaining roof condition, viable options, and each option's limits. A written scope prevents a temporary repair from being mistaken for a complete solution.",
+          "If you have a proposal, submit it through the Roof Quote Decoder for a plain-English review. Otherwise, schedule a local evaluation of the entire system and the rules for your property.",
+        ],
+        links: [
+          { label: "Upload your proposal through the Roof Quote Decoder", href: "/roof-quote-decoder" },
+          { label: "What to do after a Northern Colorado hailstorm", href: "/blog/what-to-do-after-hail-damage-northern-colorado" },
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Can a Colorado asphalt-shingle roof be repaired instead of replaced?",
+        answer:
+          "Yes. Isolated shingle, flashing, fastener, vent, or puncture problems may be repairable when the surrounding roof remains serviceable and compatible materials can be installed correctly. A qualified inspection should confirm the cause, repair area, and condition of the remaining system.",
+      },
+      {
+        question: "Does one roof leak mean the entire roof needs replacement?",
+        answer:
+          "No. One leak may come from a localized flashing or penetration problem, but it can also reveal broader installation, decking, or ventilation issues. Trace the entry point and inspect the full roof before choosing the scope.",
+      },
+      {
+        question: "Will homeowners insurance decide whether my roof is repaired or replaced?",
+        answer:
+          "The insurer decides coverage and claim payment under the policy. A roofing contractor evaluates construction conditions and recommends a scope. Compare both written documents, ask about differences, and confirm coverage questions with the insurer or licensed agent.",
+      },
+    ],
+  },
   {
     slug: "roof-replacement-cost-northern-colorado-2026",
     title: "2026 Roof Replacement Costs in Northern Colorado: A Homeowner's Guide",
